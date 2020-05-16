@@ -47,6 +47,7 @@ class CashRegister
       if items.clear 
         return total == 0
       end 
+  end 
     
 
 end
