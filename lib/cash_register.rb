@@ -18,7 +18,7 @@ class CashRegister
     item_list = item 
     # if quantity > 1
     #   counter = 0
-    end 
+    # end 
     #   while counter < quantity
     #     @items << item
     #     counter += 1
