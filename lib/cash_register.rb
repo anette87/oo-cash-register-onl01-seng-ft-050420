@@ -23,8 +23,7 @@ class CashRegister
         counter += 1
       else
       @items << item
-    end 
-    end
+    
   end
 
   def apply_discount
