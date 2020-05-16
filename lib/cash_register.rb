@@ -49,4 +49,3 @@ class CashRegister
   end 
     
 
-end
