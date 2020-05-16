@@ -38,10 +38,10 @@ class CashRegister
     end
   end
   
-  # def items(item)
-  #   @items = []
-  #   @items << item
-  # end 
+  def items(item)
+    @items = []
+    @items << item
+  end 
 
 
   def void_last_transaction
