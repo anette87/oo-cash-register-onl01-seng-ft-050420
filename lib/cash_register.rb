@@ -14,6 +14,7 @@ class CashRegister
 
   def add_item(item, price, quantity = 1)
     @price = price
+    @items = []
     @total += price * quantity
     if quantity > 1
       counter = 0
