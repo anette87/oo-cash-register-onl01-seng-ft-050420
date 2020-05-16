@@ -18,12 +18,10 @@ class CashRegister
     @items = []
     if quantity > 1
       counter = 0
-    end 
-      while counter < quantity
+       while counter < quantity
         @items << item
         counter += 1
-      
-    else
+      else
       @items << item
     end
   end
@@ -48,4 +46,4 @@ class CashRegister
     @total -= @price
   end 
     
-
+end 
