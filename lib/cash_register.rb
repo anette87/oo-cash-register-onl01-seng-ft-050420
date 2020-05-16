@@ -15,17 +15,18 @@ class CashRegister
   def add_item(item, price, quantity = 1)
     @price = price
     @total += price * quantity
+    @items = []
     @items = item 
   
     if quantity > 1
         counter = 0
     end 
        while counter < quantity
-         @items = item
+         @items << item
          counter += 1
        end
      else
-       @items = item
+       @items << item
     end
   end
 
@@ -40,8 +41,8 @@ class CashRegister
   end
   
   def items
-    items_list = []
-    items_list << @items
+    items_list =  @items
+    return @items
   end 
 
 
