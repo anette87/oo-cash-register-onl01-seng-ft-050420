@@ -38,9 +38,8 @@ class CashRegister
     end
   end
   
-  def items(item)
-    @items = []
-    @items << item
+  def items
+    @items = item_list
   end 
 
 
