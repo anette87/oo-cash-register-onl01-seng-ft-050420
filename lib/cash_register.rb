@@ -16,14 +16,15 @@ class CashRegister
     @price = price
     @total += price * quantity
     @items = []
+      if quantity > 1
+          counter = 0
+      while counter < quantity
+            @items << item
+            counter += 1
+      else
       @items << item
-        if quantity > 1
-           counter = 0
-        elsif counter < quantity
-           @items << item
-           counter += 1
-        end 
-  end
+    end
+  end 
 
   def apply_discount
     if @discount > 0
@@ -35,9 +36,10 @@ class CashRegister
     end
   end
   
-  def item
-    @items
- end 
+  def items(item)
+    @items = []
+    @items << item
+  end 
 
 
   def void_last_transaction
