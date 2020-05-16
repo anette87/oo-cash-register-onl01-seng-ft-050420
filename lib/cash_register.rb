@@ -22,7 +22,7 @@ class CashRegister
             @items << item
             counter += 1
       end 
-      else
+      elsif quiantity == 1
       @items << item
     end
   end 
