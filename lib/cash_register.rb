@@ -14,19 +14,19 @@ class CashRegister
 
   def add_item(item, price, quantity = 1)
     @price = price
-    @items = item 
     @total += price * quantity
+    @items = item 
   
-    # if quantity > 1
-    #   counter = 0
-    # end 
-    #   while counter < quantity
-    #     @items << item
-    #     counter += 1
-    #   end
-    # else
-    #   @items << item
-    # end
+    if quantity > 1
+        counter = 0
+    end 
+       while counter < quantity
+         @items = item
+         counter += 1
+       end
+     else
+       @items = item
+    end
   end
 
   def apply_discount
@@ -41,7 +41,7 @@ class CashRegister
   
   def items
     items_list = []
-    items_list << @items.all
+    items_list << @items
   end 
 
 
